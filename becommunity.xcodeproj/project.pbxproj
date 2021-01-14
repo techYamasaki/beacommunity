@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		684B3ABD23A29FCA006EF720 /* NCMBQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A6E23A29FCA006EF720 /* NCMBQuery.swift */; };
+		684B3ABE23A29FCA006EF720 /* NCMBRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A6F23A29FCA006EF720 /* NCMBRole.swift */; };
+		684B3ABF23A29FCA006EF720 /* NCMBInstallation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7023A29FCA006EF720 /* NCMBInstallation.swift */; };
+		684B3AC023A29FCA006EF720 /* NCMBRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7223A29FCA006EF720 /* NCMBRequestExecutor.swift */; };
+		684B3AC123A29FCA006EF720 /* NCMBSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7323A29FCA006EF720 /* NCMBSessionProtocol.swift */; };
+		684B3AC223A29FCA006EF720 /* NCMBSessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7423A29FCA006EF720 /* NCMBSessionFactory.swift */; };
+		684B3AC323A29FCA006EF720 /* NCMBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7523A29FCA006EF720 /* NCMBRequest.swift */; };
+		684B3AC423A29FCA006EF720 /* NCMBHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7623A29FCA006EF720 /* NCMBHTTPMethod.swift */; };
+		684B3AC523A29FCA006EF720 /* NCMBRequestExecutorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7723A29FCA006EF720 /* NCMBRequestExecutorFactory.swift */; };
+		684B3AC623A29FCA006EF720 /* NCMBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7823A29FCA006EF720 /* NCMBResponse.swift */; };
+		684B3AC723A29FCA006EF720 /* NCMBRequestExecutorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7923A29FCA006EF720 /* NCMBRequestExecutorProtocol.swift */; };
+		684B3AC823A29FCA006EF720 /* NCMBApiType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7A23A29FCA006EF720 /* NCMBApiType.swift */; };
+		684B3AC923A29FCA006EF720 /* NCMBSignatureCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7B23A29FCA006EF720 /* NCMBSignatureCalculator.swift */; };
+		684B3ACA23A29FCA006EF720 /* NCMBSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7C23A29FCA006EF720 /* NCMBSession.swift */; };
+		684B3ACB23A29FCA006EF720 /* NCMBUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A7D23A29FCA006EF720 /* NCMBUser.swift */; };
+		684B3ACC23A29FCA006EF720 /* NCMBResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8023A29FCA006EF720 /* NCMBResult.swift */; };
+		684B3ACD23A29FCA006EF720 /* NCMBBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8123A29FCA006EF720 /* NCMBBase.swift */; };
+		684B3ACE23A29FCA006EF720 /* NCMBDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8223A29FCA006EF720 /* NCMBDateFormatter.swift */; };
+		684B3ACF23A29FCA006EF720 /* NCMBDeviceSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8323A29FCA006EF720 /* NCMBDeviceSystem.swift */; };
+		684B3AD023A29FCA006EF720 /* NCMBJsonConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8423A29FCA006EF720 /* NCMBJsonConverter.swift */; };
+		684B3AD123A29FCA006EF720 /* NCMBTwitterParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8623A29FCA006EF720 /* NCMBTwitterParameters.swift */; };
+		684B3AD223A29FCA006EF720 /* NCMBGoogleParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8723A29FCA006EF720 /* NCMBGoogleParameters.swift */; };
+		684B3AD323A29FCA006EF720 /* NCMBAnonymousUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8823A29FCA006EF720 /* NCMBAnonymousUtils.swift */; };
+		684B3AD423A29FCA006EF720 /* NCMBFacebookParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8923A29FCA006EF720 /* NCMBFacebookParameters.swift */; };
+		684B3AD523A29FCA006EF720 /* NCMBSNSType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8A23A29FCA006EF720 /* NCMBSNSType.swift */; };
+		684B3AD623A29FCA006EF720 /* NCMBSnsInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8B23A29FCA006EF720 /* NCMBSnsInfoProtocol.swift */; };
+		684B3AD723A29FCA006EF720 /* NCMBPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8C23A29FCA006EF720 /* NCMBPush.swift */; };
+		684B3AD823A29FCA006EF720 /* NCMBRichPushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A8E23A29FCA006EF720 /* NCMBRichPushView.swift */; };
+		684B3AD923A29FCA006EF720 /* NCMBExpirationTimeUnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9023A29FCA006EF720 /* NCMBExpirationTimeUnitType.swift */; };
+		684B3ADA23A29FCA006EF720 /* NCMBExpirationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9123A29FCA006EF720 /* NCMBExpirationTime.swift */; };
+		684B3ADB23A29FCA006EF720 /* NCMBObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9223A29FCA006EF720 /* NCMBObject.swift */; };
+		684B3ADC23A29FCA006EF720 /* NCMB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9323A29FCA006EF720 /* NCMB.swift */; };
+		684B3ADD23A29FCB006EF720 /* NCMBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9423A29FCA006EF720 /* NCMBFile.swift */; };
+		684B3ADE23A29FCB006EF720 /* NCMBIncrementOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9623A29FCA006EF720 /* NCMBIncrementOperator.swift */; };
+		684B3ADF23A29FCB006EF720 /* NCMBAddRelationOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9723A29FCA006EF720 /* NCMBAddRelationOperator.swift */; };
+		684B3AE023A29FCB006EF720 /* NCMBDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9823A29FCA006EF720 /* NCMBDateField.swift */; };
+		684B3AE123A29FCB006EF720 /* NCMBGeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9923A29FCA006EF720 /* NCMBGeoPoint.swift */; };
+		684B3AE223A29FCB006EF720 /* NCMBRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9A23A29FCA006EF720 /* NCMBRelation.swift */; };
+		684B3AE323A29FCB006EF720 /* NCMBRemoveRelationOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9B23A29FCA006EF720 /* NCMBRemoveRelationOperator.swift */; };
+		684B3AE423A29FCB006EF720 /* NCMBFieldTypeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9C23A29FCA006EF720 /* NCMBFieldTypeConverter.swift */; };
+		684B3AE523A29FCB006EF720 /* NCMBFieldTypeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9D23A29FCA006EF720 /* NCMBFieldTypeUtil.swift */; };
+		684B3AE623A29FCB006EF720 /* NCMBAddOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9E23A29FCA006EF720 /* NCMBAddOperator.swift */; };
+		684B3AE723A29FCB006EF720 /* NCMBRemoveOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3A9F23A29FCA006EF720 /* NCMBRemoveOperator.swift */; };
+		684B3AE823A29FCB006EF720 /* NCMBAddUniqueOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA023A29FCA006EF720 /* NCMBAddUniqueOperator.swift */; };
+		684B3AE923A29FCB006EF720 /* NCMBACL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA123A29FCA006EF720 /* NCMBACL.swift */; };
+		684B3AEA23A29FCB006EF720 /* NCMBPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA223A29FCA006EF720 /* NCMBPointer.swift */; };
+		684B3AEB23A29FCB006EF720 /* NCMBAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA323A29FCA006EF720 /* NCMBAnalytics.swift */; };
+		684B3AEC23A29FCB006EF720 /* NCMBRequestMailAddressUserEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA523A29FCA006EF720 /* NCMBRequestMailAddressUserEntryService.swift */; };
+		684B3AED23A29FCB006EF720 /* NCMBFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA623A29FCA006EF720 /* NCMBFileService.swift */; };
+		684B3AEE23A29FCB006EF720 /* NCMBRequestPasswordResetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA723A29FCA006EF720 /* NCMBRequestPasswordResetService.swift */; };
+		684B3AEF23A29FCB006EF720 /* NCMBPushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA823A29FCA006EF720 /* NCMBPushService.swift */; };
+		684B3AF023A29FCB006EF720 /* NCMBUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AA923A29FCA006EF720 /* NCMBUserService.swift */; };
+		684B3AF123A29FCB006EF720 /* NCMBRoleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AAA23A29FCA006EF720 /* NCMBRoleService.swift */; };
+		684B3AF223A29FCB006EF720 /* NCMBLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AAB23A29FCA006EF720 /* NCMBLoginService.swift */; };
+		684B3AF323A29FCB006EF720 /* NCMBInstallationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AAC23A29FCA006EF720 /* NCMBInstallationService.swift */; };
+		684B3AF423A29FCB006EF720 /* NCMBRequestServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AAD23A29FCA006EF720 /* NCMBRequestServiceProtocol.swift */; };
+		684B3AF523A29FCB006EF720 /* NCMBScriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AAE23A29FCA006EF720 /* NCMBScriptService.swift */; };
+		684B3AF623A29FCB006EF720 /* NCMBLogoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AAF23A29FCA006EF720 /* NCMBLogoutService.swift */; };
+		684B3AF723A29FCB006EF720 /* NCMBObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB023A29FCA006EF720 /* NCMBObjectService.swift */; };
+		684B3AF823A29FCB006EF720 /* NCMBLocalFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB223A29FCA006EF720 /* NCMBLocalFileType.swift */; };
+		684B3AF923A29FCB006EF720 /* NCMBLocalFileManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB323A29FCA006EF720 /* NCMBLocalFileManagerFactory.swift */; };
+		684B3AFA23A29FCB006EF720 /* NCMBLocalFileManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB423A29FCA006EF720 /* NCMBLocalFileManagerProtocol.swift */; };
+		684B3AFB23A29FCB006EF720 /* NCMBApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB623A29FCA006EF720 /* NCMBApiError.swift */; };
+		684B3AFC23A29FCB006EF720 /* NCMBUserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB723A29FCA006EF720 /* NCMBUserError.swift */; };
+		684B3AFD23A29FCB006EF720 /* NCMBInvalidRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB823A29FCA006EF720 /* NCMBInvalidRequestError.swift */; };
+		684B3AFE23A29FCB006EF720 /* NCMBParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3AB923A29FCA006EF720 /* NCMBParseError.swift */; };
+		684B3AFF23A29FCB006EF720 /* NCMBApiErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3ABA23A29FCA006EF720 /* NCMBApiErrorCode.swift */; };
+		684B3B0023A29FCB006EF720 /* NCMBScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684B3ABB23A29FCA006EF720 /* NCMBScript.swift */; };
+		684B3B0123A29FCB006EF720 /* NCMB_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 684B3ABC23A29FCA006EF720 /* NCMB_Info.plist */; };
+		687AABFA233208BB000EF8D9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687AABF9233208BB000EF8D9 /* SettingViewController.swift */; };
+		687AABFC23320986000EF8D9 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687AABFB23320986000EF8D9 /* SharingViewController.swift */; };
+		687AABFE233209BE000EF8D9 /* CheckingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687AABFD233209BE000EF8D9 /* CheckingViewController.swift */; };
+		6885EAB0237645B1003099E1 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6885EAAF237645B1003099E1 /* ReadingViewController.swift */; };
+		6885EAB2237692DE003099E1 /* SharingViewListStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6885EAB1237692DD003099E1 /* SharingViewListStruct.swift */; };
+		6885EAB423769707003099E1 /* SharingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6885EAB323769707003099E1 /* SharingTableViewCell.swift */; };
+		689440A52347DDAC00FCE0E1 /* ResisteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689440A42347DDAC00FCE0E1 /* ResisteringViewController.swift */; };
+		68B3885023230420009BA5AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3884F23230420009BA5AD /* AppDelegate.swift */; };
+		68B3885223230420009BA5AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3885123230420009BA5AD /* ViewController.swift */; };
+		68B3885523230420009BA5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B3885323230420009BA5AD /* Main.storyboard */; };
+		68B3885723230420009BA5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B3885623230420009BA5AD /* Assets.xcassets */; };
+		68B3885A23230420009BA5AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B3885823230420009BA5AD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		684B3A6E23A29FCA006EF720 /* NCMBQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBQuery.swift; sourceTree = "<group>"; };
+		684B3A6F23A29FCA006EF720 /* NCMBRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRole.swift; sourceTree = "<group>"; };
+		684B3A7023A29FCA006EF720 /* NCMBInstallation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBInstallation.swift; sourceTree = "<group>"; };
+		684B3A7223A29FCA006EF720 /* NCMBRequestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRequestExecutor.swift; sourceTree = "<group>"; };
+		684B3A7323A29FCA006EF720 /* NCMBSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBSessionProtocol.swift; sourceTree = "<group>"; };
+		684B3A7423A29FCA006EF720 /* NCMBSessionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBSessionFactory.swift; sourceTree = "<group>"; };
+		684B3A7523A29FCA006EF720 /* NCMBRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRequest.swift; sourceTree = "<group>"; };
+		684B3A7623A29FCA006EF720 /* NCMBHTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBHTTPMethod.swift; sourceTree = "<group>"; };
+		684B3A7723A29FCA006EF720 /* NCMBRequestExecutorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRequestExecutorFactory.swift; sourceTree = "<group>"; };
+		684B3A7823A29FCA006EF720 /* NCMBResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBResponse.swift; sourceTree = "<group>"; };
+		684B3A7923A29FCA006EF720 /* NCMBRequestExecutorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRequestExecutorProtocol.swift; sourceTree = "<group>"; };
+		684B3A7A23A29FCA006EF720 /* NCMBApiType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBApiType.swift; sourceTree = "<group>"; };
+		684B3A7B23A29FCA006EF720 /* NCMBSignatureCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBSignatureCalculator.swift; sourceTree = "<group>"; };
+		684B3A7C23A29FCA006EF720 /* NCMBSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBSession.swift; sourceTree = "<group>"; };
+		684B3A7D23A29FCA006EF720 /* NCMBUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBUser.swift; sourceTree = "<group>"; };
+		684B3A7E23A29FCA006EF720 /* NCMB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCMB.h; sourceTree = "<group>"; };
+		684B3A8023A29FCA006EF720 /* NCMBResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBResult.swift; sourceTree = "<group>"; };
+		684B3A8123A29FCA006EF720 /* NCMBBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBBase.swift; sourceTree = "<group>"; };
+		684B3A8223A29FCA006EF720 /* NCMBDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBDateFormatter.swift; sourceTree = "<group>"; };
+		684B3A8323A29FCA006EF720 /* NCMBDeviceSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBDeviceSystem.swift; sourceTree = "<group>"; };
+		684B3A8423A29FCA006EF720 /* NCMBJsonConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBJsonConverter.swift; sourceTree = "<group>"; };
+		684B3A8623A29FCA006EF720 /* NCMBTwitterParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBTwitterParameters.swift; sourceTree = "<group>"; };
+		684B3A8723A29FCA006EF720 /* NCMBGoogleParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBGoogleParameters.swift; sourceTree = "<group>"; };
+		684B3A8823A29FCA006EF720 /* NCMBAnonymousUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBAnonymousUtils.swift; sourceTree = "<group>"; };
+		684B3A8923A29FCA006EF720 /* NCMBFacebookParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBFacebookParameters.swift; sourceTree = "<group>"; };
+		684B3A8A23A29FCA006EF720 /* NCMBSNSType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBSNSType.swift; sourceTree = "<group>"; };
+		684B3A8B23A29FCA006EF720 /* NCMBSnsInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBSnsInfoProtocol.swift; sourceTree = "<group>"; };
+		684B3A8C23A29FCA006EF720 /* NCMBPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBPush.swift; sourceTree = "<group>"; };
+		684B3A8E23A29FCA006EF720 /* NCMBRichPushView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRichPushView.swift; sourceTree = "<group>"; };
+		684B3A9023A29FCA006EF720 /* NCMBExpirationTimeUnitType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBExpirationTimeUnitType.swift; sourceTree = "<group>"; };
+		684B3A9123A29FCA006EF720 /* NCMBExpirationTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBExpirationTime.swift; sourceTree = "<group>"; };
+		684B3A9223A29FCA006EF720 /* NCMBObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBObject.swift; sourceTree = "<group>"; };
+		684B3A9323A29FCA006EF720 /* NCMB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMB.swift; sourceTree = "<group>"; };
+		684B3A9423A29FCA006EF720 /* NCMBFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBFile.swift; sourceTree = "<group>"; };
+		684B3A9623A29FCA006EF720 /* NCMBIncrementOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBIncrementOperator.swift; sourceTree = "<group>"; };
+		684B3A9723A29FCA006EF720 /* NCMBAddRelationOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBAddRelationOperator.swift; sourceTree = "<group>"; };
+		684B3A9823A29FCA006EF720 /* NCMBDateField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBDateField.swift; sourceTree = "<group>"; };
+		684B3A9923A29FCA006EF720 /* NCMBGeoPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBGeoPoint.swift; sourceTree = "<group>"; };
+		684B3A9A23A29FCA006EF720 /* NCMBRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRelation.swift; sourceTree = "<group>"; };
+		684B3A9B23A29FCA006EF720 /* NCMBRemoveRelationOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRemoveRelationOperator.swift; sourceTree = "<group>"; };
+		684B3A9C23A29FCA006EF720 /* NCMBFieldTypeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBFieldTypeConverter.swift; sourceTree = "<group>"; };
+		684B3A9D23A29FCA006EF720 /* NCMBFieldTypeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBFieldTypeUtil.swift; sourceTree = "<group>"; };
+		684B3A9E23A29FCA006EF720 /* NCMBAddOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBAddOperator.swift; sourceTree = "<group>"; };
+		684B3A9F23A29FCA006EF720 /* NCMBRemoveOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRemoveOperator.swift; sourceTree = "<group>"; };
+		684B3AA023A29FCA006EF720 /* NCMBAddUniqueOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBAddUniqueOperator.swift; sourceTree = "<group>"; };
+		684B3AA123A29FCA006EF720 /* NCMBACL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBACL.swift; sourceTree = "<group>"; };
+		684B3AA223A29FCA006EF720 /* NCMBPointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBPointer.swift; sourceTree = "<group>"; };
+		684B3AA323A29FCA006EF720 /* NCMBAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBAnalytics.swift; sourceTree = "<group>"; };
+		684B3AA523A29FCA006EF720 /* NCMBRequestMailAddressUserEntryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRequestMailAddressUserEntryService.swift; sourceTree = "<group>"; };
+		684B3AA623A29FCA006EF720 /* NCMBFileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBFileService.swift; sourceTree = "<group>"; };
+		684B3AA723A29FCA006EF720 /* NCMBRequestPasswordResetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRequestPasswordResetService.swift; sourceTree = "<group>"; };
+		684B3AA823A29FCA006EF720 /* NCMBPushService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBPushService.swift; sourceTree = "<group>"; };
+		684B3AA923A29FCA006EF720 /* NCMBUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBUserService.swift; sourceTree = "<group>"; };
+		684B3AAA23A29FCA006EF720 /* NCMBRoleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRoleService.swift; sourceTree = "<group>"; };
+		684B3AAB23A29FCA006EF720 /* NCMBLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBLoginService.swift; sourceTree = "<group>"; };
+		684B3AAC23A29FCA006EF720 /* NCMBInstallationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBInstallationService.swift; sourceTree = "<group>"; };
+		684B3AAD23A29FCA006EF720 /* NCMBRequestServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBRequestServiceProtocol.swift; sourceTree = "<group>"; };
+		684B3AAE23A29FCA006EF720 /* NCMBScriptService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBScriptService.swift; sourceTree = "<group>"; };
+		684B3AAF23A29FCA006EF720 /* NCMBLogoutService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBLogoutService.swift; sourceTree = "<group>"; };
+		684B3AB023A29FCA006EF720 /* NCMBObjectService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBObjectService.swift; sourceTree = "<group>"; };
+		684B3AB223A29FCA006EF720 /* NCMBLocalFileType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBLocalFileType.swift; sourceTree = "<group>"; };
+		684B3AB323A29FCA006EF720 /* NCMBLocalFileManagerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBLocalFileManagerFactory.swift; sourceTree = "<group>"; };
+		684B3AB423A29FCA006EF720 /* NCMBLocalFileManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBLocalFileManagerProtocol.swift; sourceTree = "<group>"; };
+		684B3AB623A29FCA006EF720 /* NCMBApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBApiError.swift; sourceTree = "<group>"; };
+		684B3AB723A29FCA006EF720 /* NCMBUserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBUserError.swift; sourceTree = "<group>"; };
+		684B3AB823A29FCA006EF720 /* NCMBInvalidRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBInvalidRequestError.swift; sourceTree = "<group>"; };
+		684B3AB923A29FCA006EF720 /* NCMBParseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBParseError.swift; sourceTree = "<group>"; };
+		684B3ABA23A29FCA006EF720 /* NCMBApiErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBApiErrorCode.swift; sourceTree = "<group>"; };
+		684B3ABB23A29FCA006EF720 /* NCMBScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMBScript.swift; sourceTree = "<group>"; };
+		684B3ABC23A29FCA006EF720 /* NCMB_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NCMB_Info.plist; sourceTree = "<group>"; };
+		687AABF9233208BB000EF8D9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		687AABFB23320986000EF8D9 /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
+		687AABFD233209BE000EF8D9 /* CheckingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingViewController.swift; sourceTree = "<group>"; };
+		6885EAAF237645B1003099E1 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		6885EAB1237692DD003099E1 /* SharingViewListStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewListStruct.swift; sourceTree = "<group>"; };
+		6885EAB323769707003099E1 /* SharingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingTableViewCell.swift; sourceTree = "<group>"; };
+		689440A42347DDAC00FCE0E1 /* ResisteringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResisteringViewController.swift; sourceTree = "<group>"; };
+		68B3884C23230420009BA5AD /* becommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = becommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B3884F23230420009BA5AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68B3885123230420009BA5AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68B3885423230420009BA5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68B3885623230420009BA5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68B3885923230420009BA5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68B3885B23230420009BA5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68B388492323041F009BA5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		684B3A6D23A29FCA006EF720 /* NCMB */ = {
+			isa = PBXGroup;
+			children = (
+				684B3A6E23A29FCA006EF720 /* NCMBQuery.swift */,
+				684B3A6F23A29FCA006EF720 /* NCMBRole.swift */,
+				684B3A7023A29FCA006EF720 /* NCMBInstallation.swift */,
+				684B3A7123A29FCA006EF720 /* network */,
+				684B3A7D23A29FCA006EF720 /* NCMBUser.swift */,
+				684B3A7E23A29FCA006EF720 /* NCMB.h */,
+				684B3A7F23A29FCA006EF720 /* component */,
+				684B3A8523A29FCA006EF720 /* user */,
+				684B3A8C23A29FCA006EF720 /* NCMBPush.swift */,
+				684B3A8D23A29FCA006EF720 /* richpush */,
+				684B3A8F23A29FCA006EF720 /* push */,
+				684B3A9223A29FCA006EF720 /* NCMBObject.swift */,
+				684B3A9323A29FCA006EF720 /* NCMB.swift */,
+				684B3A9423A29FCA006EF720 /* NCMBFile.swift */,
+				684B3A9523A29FCA006EF720 /* fieldtype */,
+				684B3AA323A29FCA006EF720 /* NCMBAnalytics.swift */,
+				684B3AA423A29FCA006EF720 /* service */,
+				684B3AB123A29FCA006EF720 /* localfile */,
+				684B3AB523A29FCA006EF720 /* error */,
+				684B3ABB23A29FCA006EF720 /* NCMBScript.swift */,
+				684B3ABC23A29FCA006EF720 /* NCMB_Info.plist */,
+			);
+			path = NCMB;
+			sourceTree = "<group>";
+		};
+		684B3A7123A29FCA006EF720 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				684B3A7223A29FCA006EF720 /* NCMBRequestExecutor.swift */,
+				684B3A7323A29FCA006EF720 /* NCMBSessionProtocol.swift */,
+				684B3A7423A29FCA006EF720 /* NCMBSessionFactory.swift */,
+				684B3A7523A29FCA006EF720 /* NCMBRequest.swift */,
+				684B3A7623A29FCA006EF720 /* NCMBHTTPMethod.swift */,
+				684B3A7723A29FCA006EF720 /* NCMBRequestExecutorFactory.swift */,
+				684B3A7823A29FCA006EF720 /* NCMBResponse.swift */,
+				684B3A7923A29FCA006EF720 /* NCMBRequestExecutorProtocol.swift */,
+				684B3A7A23A29FCA006EF720 /* NCMBApiType.swift */,
+				684B3A7B23A29FCA006EF720 /* NCMBSignatureCalculator.swift */,
+				684B3A7C23A29FCA006EF720 /* NCMBSession.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		684B3A7F23A29FCA006EF720 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				684B3A8023A29FCA006EF720 /* NCMBResult.swift */,
+				684B3A8123A29FCA006EF720 /* NCMBBase.swift */,
+				684B3A8223A29FCA006EF720 /* NCMBDateFormatter.swift */,
+				684B3A8323A29FCA006EF720 /* NCMBDeviceSystem.swift */,
+				684B3A8423A29FCA006EF720 /* NCMBJsonConverter.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		684B3A8523A29FCA006EF720 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				684B3A8623A29FCA006EF720 /* NCMBTwitterParameters.swift */,
+				684B3A8723A29FCA006EF720 /* NCMBGoogleParameters.swift */,
+				684B3A8823A29FCA006EF720 /* NCMBAnonymousUtils.swift */,
+				684B3A8923A29FCA006EF720 /* NCMBFacebookParameters.swift */,
+				684B3A8A23A29FCA006EF720 /* NCMBSNSType.swift */,
+				684B3A8B23A29FCA006EF720 /* NCMBSnsInfoProtocol.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		684B3A8D23A29FCA006EF720 /* richpush */ = {
+			isa = PBXGroup;
+			children = (
+				684B3A8E23A29FCA006EF720 /* NCMBRichPushView.swift */,
+			);
+			path = richpush;
+			sourceTree = "<group>";
+		};
+		684B3A8F23A29FCA006EF720 /* push */ = {
+			isa = PBXGroup;
+			children = (
+				684B3A9023A29FCA006EF720 /* NCMBExpirationTimeUnitType.swift */,
+				684B3A9123A29FCA006EF720 /* NCMBExpirationTime.swift */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		684B3A9523A29FCA006EF720 /* fieldtype */ = {
+			isa = PBXGroup;
+			children = (
+				684B3A9623A29FCA006EF720 /* NCMBIncrementOperator.swift */,
+				684B3A9723A29FCA006EF720 /* NCMBAddRelationOperator.swift */,
+				684B3A9823A29FCA006EF720 /* NCMBDateField.swift */,
+				684B3A9923A29FCA006EF720 /* NCMBGeoPoint.swift */,
+				684B3A9A23A29FCA006EF720 /* NCMBRelation.swift */,
+				684B3A9B23A29FCA006EF720 /* NCMBRemoveRelationOperator.swift */,
+				684B3A9C23A29FCA006EF720 /* NCMBFieldTypeConverter.swift */,
+				684B3A9D23A29FCA006EF720 /* NCMBFieldTypeUtil.swift */,
+				684B3A9E23A29FCA006EF720 /* NCMBAddOperator.swift */,
+				684B3A9F23A29FCA006EF720 /* NCMBRemoveOperator.swift */,
+				684B3AA023A29FCA006EF720 /* NCMBAddUniqueOperator.swift */,
+				684B3AA123A29FCA006EF720 /* NCMBACL.swift */,
+				684B3AA223A29FCA006EF720 /* NCMBPointer.swift */,
+			);
+			path = fieldtype;
+			sourceTree = "<group>";
+		};
+		684B3AA423A29FCA006EF720 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				684B3AA523A29FCA006EF720 /* NCMBRequestMailAddressUserEntryService.swift */,
+				684B3AA623A29FCA006EF720 /* NCMBFileService.swift */,
+				684B3AA723A29FCA006EF720 /* NCMBRequestPasswordResetService.swift */,
+				684B3AA823A29FCA006EF720 /* NCMBPushService.swift */,
+				684B3AA923A29FCA006EF720 /* NCMBUserService.swift */,
+				684B3AAA23A29FCA006EF720 /* NCMBRoleService.swift */,
+				684B3AAB23A29FCA006EF720 /* NCMBLoginService.swift */,
+				684B3AAC23A29FCA006EF720 /* NCMBInstallationService.swift */,
+				684B3AAD23A29FCA006EF720 /* NCMBRequestServiceProtocol.swift */,
+				684B3AAE23A29FCA006EF720 /* NCMBScriptService.swift */,
+				684B3AAF23A29FCA006EF720 /* NCMBLogoutService.swift */,
+				684B3AB023A29FCA006EF720 /* NCMBObjectService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		684B3AB123A29FCA006EF720 /* localfile */ = {
+			isa = PBXGroup;
+			children = (
+				684B3AB223A29FCA006EF720 /* NCMBLocalFileType.swift */,
+				684B3AB323A29FCA006EF720 /* NCMBLocalFileManagerFactory.swift */,
+				684B3AB423A29FCA006EF720 /* NCMBLocalFileManagerProtocol.swift */,
+			);
+			path = localfile;
+			sourceTree = "<group>";
+		};
+		684B3AB523A29FCA006EF720 /* error */ = {
+			isa = PBXGroup;
+			children = (
+				684B3AB623A29FCA006EF720 /* NCMBApiError.swift */,
+				684B3AB723A29FCA006EF720 /* NCMBUserError.swift */,
+				684B3AB823A29FCA006EF720 /* NCMBInvalidRequestError.swift */,
+				684B3AB923A29FCA006EF720 /* NCMBParseError.swift */,
+				684B3ABA23A29FCA006EF720 /* NCMBApiErrorCode.swift */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		68B388432323041F009BA5AD = {
+			isa = PBXGroup;
+			children = (
+				68B3884E23230420009BA5AD /* becommunity */,
+				68B3884D23230420009BA5AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68B3884D23230420009BA5AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B3884C23230420009BA5AD /* becommunity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68B3884E23230420009BA5AD /* becommunity */ = {
+			isa = PBXGroup;
+			children = (
+				68B3884F23230420009BA5AD /* AppDelegate.swift */,
+				68B3885123230420009BA5AD /* ViewController.swift */,
+				687AABF9233208BB000EF8D9 /* SettingViewController.swift */,
+				687AABFB23320986000EF8D9 /* SharingViewController.swift */,
+				689440A42347DDAC00FCE0E1 /* ResisteringViewController.swift */,
+				687AABFD233209BE000EF8D9 /* CheckingViewController.swift */,
+				6885EAAF237645B1003099E1 /* ReadingViewController.swift */,
+				68B3885323230420009BA5AD /* Main.storyboard */,
+				6885EAB1237692DD003099E1 /* SharingViewListStruct.swift */,
+				6885EAB323769707003099E1 /* SharingTableViewCell.swift */,
+				68B3885623230420009BA5AD /* Assets.xcassets */,
+				684B3A6D23A29FCA006EF720 /* NCMB */,
+				68B3885823230420009BA5AD /* LaunchScreen.storyboard */,
+				68B3885B23230420009BA5AD /* Info.plist */,
+			);
+			path = becommunity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68B3884B2323041F009BA5AD /* becommunity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B3885E23230420009BA5AD /* Build configuration list for PBXNativeTarget "becommunity" */;
+			buildPhases = (
+				68B388482323041F009BA5AD /* Sources */,
+				68B388492323041F009BA5AD /* Frameworks */,
+				68B3884A2323041F009BA5AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = becommunity;
+			productName = becommunity;
+			productReference = 68B3884C23230420009BA5AD /* becommunity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68B388442323041F009BA5AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "yamasaki kounosuke";
+				TargetAttributes = {
+					68B3884B2323041F009BA5AD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 68B388472323041F009BA5AD /* Build configuration list for PBXProject "becommunity" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68B388432323041F009BA5AD;
+			productRefGroup = 68B3884D23230420009BA5AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68B3884B2323041F009BA5AD /* becommunity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68B3884A2323041F009BA5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684B3B0123A29FCB006EF720 /* NCMB_Info.plist in Resources */,
+				68B3885A23230420009BA5AD /* LaunchScreen.storyboard in Resources */,
+				68B3885723230420009BA5AD /* Assets.xcassets in Resources */,
+				68B3885523230420009BA5AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68B388482323041F009BA5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				684B3ACB23A29FCA006EF720 /* NCMBUser.swift in Sources */,
+				684B3AFB23A29FCB006EF720 /* NCMBApiError.swift in Sources */,
+				684B3AC423A29FCA006EF720 /* NCMBHTTPMethod.swift in Sources */,
+				684B3AF923A29FCB006EF720 /* NCMBLocalFileManagerFactory.swift in Sources */,
+				68B3885223230420009BA5AD /* ViewController.swift in Sources */,
+				684B3AED23A29FCB006EF720 /* NCMBFileService.swift in Sources */,
+				687AABFC23320986000EF8D9 /* SharingViewController.swift in Sources */,
+				684B3AC823A29FCA006EF720 /* NCMBApiType.swift in Sources */,
+				684B3AFF23A29FCB006EF720 /* NCMBApiErrorCode.swift in Sources */,
+				684B3AC623A29FCA006EF720 /* NCMBResponse.swift in Sources */,
+				684B3AE023A29FCB006EF720 /* NCMBDateField.swift in Sources */,
+				684B3AD423A29FCA006EF720 /* NCMBFacebookParameters.swift in Sources */,
+				684B3ADC23A29FCA006EF720 /* NCMB.swift in Sources */,
+				68B3885023230420009BA5AD /* AppDelegate.swift in Sources */,
+				684B3ADD23A29FCB006EF720 /* NCMBFile.swift in Sources */,
+				684B3AFA23A29FCB006EF720 /* NCMBLocalFileManagerProtocol.swift in Sources */,
+				684B3AD523A29FCA006EF720 /* NCMBSNSType.swift in Sources */,
+				684B3AE623A29FCB006EF720 /* NCMBAddOperator.swift in Sources */,
+				684B3AD123A29FCA006EF720 /* NCMBTwitterParameters.swift in Sources */,
+				684B3AF123A29FCB006EF720 /* NCMBRoleService.swift in Sources */,
+				687AABFE233209BE000EF8D9 /* CheckingViewController.swift in Sources */,
+				684B3ADA23A29FCA006EF720 /* NCMBExpirationTime.swift in Sources */,
+				684B3ABE23A29FCA006EF720 /* NCMBRole.swift in Sources */,
+				684B3AFD23A29FCB006EF720 /* NCMBInvalidRequestError.swift in Sources */,
+				684B3AE523A29FCB006EF720 /* NCMBFieldTypeUtil.swift in Sources */,
+				684B3B0023A29FCB006EF720 /* NCMBScript.swift in Sources */,
+				684B3AC323A29FCA006EF720 /* NCMBRequest.swift in Sources */,
+				684B3ABD23A29FCA006EF720 /* NCMBQuery.swift in Sources */,
+				684B3AE223A29FCB006EF720 /* NCMBRelation.swift in Sources */,
+				684B3AF823A29FCB006EF720 /* NCMBLocalFileType.swift in Sources */,
+				689440A52347DDAC00FCE0E1 /* ResisteringViewController.swift in Sources */,
+				684B3AEB23A29FCB006EF720 /* NCMBAnalytics.swift in Sources */,
+				684B3AD323A29FCA006EF720 /* NCMBAnonymousUtils.swift in Sources */,
+				684B3ABF23A29FCA006EF720 /* NCMBInstallation.swift in Sources */,
+				684B3AF323A29FCB006EF720 /* NCMBInstallationService.swift in Sources */,
+				684B3AE323A29FCB006EF720 /* NCMBRemoveRelationOperator.swift in Sources */,
+				684B3ADB23A29FCA006EF720 /* NCMBObject.swift in Sources */,
+				684B3AF623A29FCB006EF720 /* NCMBLogoutService.swift in Sources */,
+				684B3AE923A29FCB006EF720 /* NCMBACL.swift in Sources */,
+				684B3AE123A29FCB006EF720 /* NCMBGeoPoint.swift in Sources */,
+				684B3AEA23A29FCB006EF720 /* NCMBPointer.swift in Sources */,
+				684B3AD723A29FCA006EF720 /* NCMBPush.swift in Sources */,
+				684B3ADE23A29FCB006EF720 /* NCMBIncrementOperator.swift in Sources */,
+				684B3AE823A29FCB006EF720 /* NCMBAddUniqueOperator.swift in Sources */,
+				684B3AD923A29FCA006EF720 /* NCMBExpirationTimeUnitType.swift in Sources */,
+				684B3AD023A29FCA006EF720 /* NCMBJsonConverter.swift in Sources */,
+				684B3AD223A29FCA006EF720 /* NCMBGoogleParameters.swift in Sources */,
+				684B3AE423A29FCB006EF720 /* NCMBFieldTypeConverter.swift in Sources */,
+				684B3ACA23A29FCA006EF720 /* NCMBSession.swift in Sources */,
+				684B3AF723A29FCB006EF720 /* NCMBObjectService.swift in Sources */,
+				684B3AF023A29FCB006EF720 /* NCMBUserService.swift in Sources */,
+				684B3ACF23A29FCA006EF720 /* NCMBDeviceSystem.swift in Sources */,
+				684B3AC523A29FCA006EF720 /* NCMBRequestExecutorFactory.swift in Sources */,
+				687AABFA233208BB000EF8D9 /* SettingViewController.swift in Sources */,
+				684B3AC023A29FCA006EF720 /* NCMBRequestExecutor.swift in Sources */,
+				684B3AC723A29FCA006EF720 /* NCMBRequestExecutorProtocol.swift in Sources */,
+				684B3AFE23A29FCB006EF720 /* NCMBParseError.swift in Sources */,
+				684B3ACC23A29FCA006EF720 /* NCMBResult.swift in Sources */,
+				6885EAB2237692DE003099E1 /* SharingViewListStruct.swift in Sources */,
+				684B3AEC23A29FCB006EF720 /* NCMBRequestMailAddressUserEntryService.swift in Sources */,
+				684B3AE723A29FCB006EF720 /* NCMBRemoveOperator.swift in Sources */,
+				684B3AEE23A29FCB006EF720 /* NCMBRequestPasswordResetService.swift in Sources */,
+				684B3AEF23A29FCB006EF720 /* NCMBPushService.swift in Sources */,
+				684B3ACE23A29FCA006EF720 /* NCMBDateFormatter.swift in Sources */,
+				684B3ADF23A29FCB006EF720 /* NCMBAddRelationOperator.swift in Sources */,
+				684B3AC223A29FCA006EF720 /* NCMBSessionFactory.swift in Sources */,
+				684B3AF523A29FCB006EF720 /* NCMBScriptService.swift in Sources */,
+				6885EAB423769707003099E1 /* SharingTableViewCell.swift in Sources */,
+				684B3AC123A29FCA006EF720 /* NCMBSessionProtocol.swift in Sources */,
+				684B3AF223A29FCB006EF720 /* NCMBLoginService.swift in Sources */,
+				684B3AC923A29FCA006EF720 /* NCMBSignatureCalculator.swift in Sources */,
+				684B3AD823A29FCA006EF720 /* NCMBRichPushView.swift in Sources */,
+				684B3AFC23A29FCB006EF720 /* NCMBUserError.swift in Sources */,
+				684B3AF423A29FCB006EF720 /* NCMBRequestServiceProtocol.swift in Sources */,
+				684B3ACD23A29FCA006EF720 /* NCMBBase.swift in Sources */,
+				6885EAB0237645B1003099E1 /* ReadingViewController.swift in Sources */,
+				684B3AD623A29FCA006EF720 /* NCMBSnsInfoProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		68B3885323230420009BA5AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B3885423230420009BA5AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68B3885823230420009BA5AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B3885923230420009BA5AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68B3885C23230420009BA5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68B3885D23230420009BA5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68B3885F23230420009BA5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B2QHP6K8U;
+				INFOPLIST_FILE = becommunity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beacommunity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68B3886023230420009BA5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B2QHP6K8U;
+				INFOPLIST_FILE = becommunity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beacommunity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68B388472323041F009BA5AD /* Build configuration list for PBXProject "becommunity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B3885C23230420009BA5AD /* Debug */,
+				68B3885D23230420009BA5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B3885E23230420009BA5AD /* Build configuration list for PBXNativeTarget "becommunity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B3885F23230420009BA5AD /* Debug */,
+				68B3886023230420009BA5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68B388442323041F009BA5AD /* Project object */;
+}
